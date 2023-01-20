@@ -9,13 +9,13 @@
     gap: 20px;
   }
   @include desktop {
-    width: 63%;
+    width: 590px;
+    height: 77.3vh;
     flex-direction: column;
     justify-content: flex-start;
     gap: 0px;
     padding-top: 2%;
-    margin-right: 6.6%;
-    height: 77vh;
+    margin-right: 6.3%;
   }
   &__section {
     @include tablet {
@@ -26,8 +26,8 @@
       background-color: $mainColor;
     }
     @include desktop {
-      width: 210px;
-      height: 130px;
+      width: 78%;
+      height: 23%;
       margin-top: 3%;
     }
   }
