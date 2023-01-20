@@ -1,0 +1,17 @@
+.main__article {
+  padding-left: 4.5%;
+  padding-right: 7.2%;
+  padding-top: 4.3%;
+  padding-bottom: 4%;
+  text-align: left;
+  font-family: $mainFont;
+  &__title {
+    font-size: rem(25);
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    margin-bottom: 12.5px;
+  }
+  &__text {
+    font-size: rem(18);
+  }
+}

@@ -2,8 +2,12 @@
 @import 'core/reset';
 @import 'core/mixins';
 @import 'core/functions';
+@import 'layout/page';
 @import 'layout/header';
+@import 'layout/main';
 @import 'layout/footer';
+@import 'pages/article';
+@import 'pages/highlightedArticle';
 
 .hidden {
   display: none;
