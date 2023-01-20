@@ -1,12 +1,21 @@
 .main__aside {
   display: none;
   @include tablet {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     background-color: $secondaryColor;
     gap: 20px;
+  }
+  @include desktop {
+    width: 63%;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+    padding-top: 2%;
+    margin-right: 6.6%;
+    height: 77vh;
   }
   &__section {
     @include tablet {
@@ -15,6 +24,11 @@
       margin-top: 2%;
       margin-bottom: 2%;
       background-color: $mainColor;
+    }
+    @include desktop {
+      width: 210px;
+      height: 130px;
+      margin-top: 3%;
     }
   }
 }
