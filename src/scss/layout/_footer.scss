@@ -1,5 +1,5 @@
 .footer {
-  width: 100vw;
+  width: 100%;
   height: 18.7vh;
   background-color: $mainColor;
   display: flex;
@@ -13,11 +13,18 @@
     justify-content: space-between;
     gap: 50px;
   }
+  @include desktop {
+    height: 10vh;
+  }
   &__menu_1 {
     width: 82%;
     @include tablet {
       width: 43%;
-      padding-left: 3%;
+      margin-left: 3%;
+    }
+    @include desktop {
+      width: 20.7%;
+      margin-left: 7%;
     }
     &__list {
       display: grid;
@@ -41,6 +48,14 @@
         font-size: rem(15);
         margin-top: 1px;
       }
+      @include desktop {
+        font-size: rem(13.5);
+        margin-top: 1px;
+        padding-left: 0%;
+        padding: 10px;
+        padding-top: 13.5px;
+        padding-bottom: 14px;
+      }
     }
   }
   &__menu_2 {
@@ -48,6 +63,10 @@
     @include tablet {
       width: 20%;
       padding-right: 3%;
+    }
+    @include desktop {
+      width: 19.7%;
+      padding-right: 7%;
     }
     &__list {
       display: grid;
@@ -71,6 +90,13 @@
         padding: 22.5%;
         font-size: rem(15);
         margin-top: 1px;
+      }
+      @include desktop {
+        font-size: rem(13.5);
+        margin-top: 1px;
+        padding: 10px;
+        padding-top: 13px;
+        padding-bottom: 13px;
       }
     }
   }
