@@ -8,13 +8,12 @@
   align-items: center;
   font-family: $mainFont;
   &__section {
-    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10.8px;
     font-size: rem(33);
-    margin-bottom: 26px;
+    margin-bottom: 27.5px;
   }
   &__img_wrapper {
     width: 50px;
@@ -33,19 +32,23 @@
       top: 9px;
     }
   }
+  &__main_title {
+    margin-top: 3px;
+  }
   &__menu {
     width: 100%;
     background-color: $navMainColor;
     &__list {
-      display: flex;
-      justify-content: space-around;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto;
     }
     &__item {
       text-align: center;
     }
     &__link {
       display: block;
-      padding: 16.2%;
+      padding: 13.3%;
       text-decoration: none;
       color: $linkColor;
       font-size: rem(17);
