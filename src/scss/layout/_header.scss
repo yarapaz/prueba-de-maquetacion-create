@@ -33,26 +33,26 @@
     }
   }
   &__main_title {
-    margin-top: 2.7px;
+    margin-top: 3px;
   }
   &__menu {
     width: 100%;
     background-color: $navMainColor;
     &__list {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto;
     }
     &__item {
       text-align: center;
     }
     &__link {
       display: block;
-      padding: 20px;
+      padding: 13.3%;
       text-decoration: none;
-      padding: 3%;
       color: $linkColor;
       font-size: rem(17);
+      font-weight: 400;
     }
   }
 }
