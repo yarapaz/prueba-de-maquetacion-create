@@ -77,6 +77,9 @@
       color: $linkColor;
       font-size: rem(17);
       font-weight: 400;
+      &:hover {
+        background-color: rgba(249, 124, 124, 0.4);
+      }
       @include tablet {
         padding: 9.5%;
         font-size: rem(18);
