@@ -43,8 +43,17 @@
       color: $linkColor;
       font-size: rem(17);
       font-weight: 400;
-      &:hover {
-        background-color: rgba(249, 124, 124, 0.4);
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: rgba(249, 124, 124, 0.2);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: transform 0.3s;
       }
       @include tablet {
         padding-left: 16%;
@@ -87,8 +96,17 @@
       font-size: rem(17.6);
       font-weight: 400;
       text-transform: uppercase;
-      &:hover {
-        background-color: rgb(179, 98, 41);
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: rgba(245, 211, 139, 0.2);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: transform 0.3s;
       }
       @include tablet {
         padding: 22.5%;

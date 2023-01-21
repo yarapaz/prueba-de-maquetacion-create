@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 20.8vh;
+  height: 19vh;
   background-color: $mainColor;
   display: flex;
   flex-direction: column;
@@ -20,8 +20,8 @@
     justify-content: center;
     align-items: center;
     gap: 10.8px;
-    font-size: rem(33);
-    margin-bottom: 27.5px;
+    font-size: 201%;
+    margin-bottom: 28px;
     @include tablet {
       font-size: rem(37);
       margin-bottom: 40px;
@@ -50,7 +50,7 @@
     }
   }
   &__main_title {
-    margin-top: 3px;
+    margin-top: 2px;
     @include tablet {
       margin-top: 2px;
     }
@@ -72,13 +72,22 @@
     }
     &__link {
       display: block;
-      padding: 13.3%;
+      padding: 13%;
       text-decoration: none;
       color: $linkColor;
       font-size: rem(17);
       font-weight: 400;
-      &:hover {
-        background-color: rgba(249, 124, 124, 0.4);
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: rgba(255, 135, 135, 0.2);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: transform 0.3s;
       }
       @include tablet {
         padding: 9.5%;
