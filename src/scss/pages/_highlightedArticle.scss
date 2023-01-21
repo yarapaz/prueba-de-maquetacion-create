@@ -8,16 +8,16 @@
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   @include tablet {
-    margin-left: 4.5%;
+    margin-left: 3.5%;
     margin-right: 6.5%;
-    padding-top: 4%;
-    padding-bottom: 3.5%;
+    padding-top: 3%;
+    padding-bottom: 3.3%;
   }
   @include desktop {
-    margin-left: 3.5%;
+    margin-left: 3.3%;
     margin-right: 3.5%;
-    padding-top: 3.5%;
-    padding-bottom: 2.8%;
+    padding-top: 3%;
+    padding-bottom: 2.2%;
   }
   &__title {
     font-size: rem(25);
@@ -28,7 +28,7 @@
       margin-bottom: 20px;
     }
     @include desktop {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       font-size: rem(23);
     }
   }

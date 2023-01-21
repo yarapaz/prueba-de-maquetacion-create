@@ -8,10 +8,10 @@
   align-items: center;
   font-family: $mainFont;
   @include tablet {
-    height: 25vh;
+    height: 22.5vh;
   }
   @include desktop {
-    height: 12.7vh;
+    height: 12vh;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -24,11 +24,11 @@
     margin-bottom: 28px;
     @include tablet {
       font-size: rem(37);
-      margin-bottom: 40px;
+      margin-bottom: 38px;
     }
     @include desktop {
-      font-size: rem(32);
-      margin-bottom: 9px;
+      font-size: rem(28);
+      margin-bottom: 7px;
       margin-left: 8%;
     }
   }
@@ -36,6 +36,10 @@
     width: 50px;
     height: 50px;
     margin-top: 2px;
+    @include desktop {
+      width: 45px;
+      height: 45px;
+    }
     &__link {
       padding-top: 5px;
       position: relative;
@@ -52,6 +56,9 @@
   &__main_title {
     margin-top: 2px;
     @include tablet {
+      margin-top: 0px;
+    }
+    @include desktop {
       margin-top: 2px;
     }
   }
@@ -60,7 +67,8 @@
     background-color: $navMainColor;
     @include desktop {
       width: 40%;
-      margin-right: 7.5%;
+      margin-right: 7.3%;
+      margin-bottom: 8px;
     }
     &__list {
       display: grid;
@@ -90,12 +98,12 @@
         transition: transform 0.3s;
       }
       @include tablet {
-        padding: 9.5%;
+        padding: 7.4%;
         font-size: rem(18);
       }
       @include desktop {
-        padding: 15px;
-        font-size: rem(15);
+        padding: 13.5px;
+        font-size: rem(14);
       }
     }
   }
